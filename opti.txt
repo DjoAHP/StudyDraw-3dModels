@@ -9,3 +9,46 @@ Tu peux ajuster le ratio pour plus ou moins de compression (entre 0.1 et 1).)
 - Draco:
 
 gltf-transform draco input.glb output_draco.glb
+
+-----------
+
+BLENDER script "Supression de materiel":
+--------
+
+import bpy
+
+# Parcours tous les objets de la scène
+for obj in bpy.data.objects:
+    # Vérifie si l'objet est un mesh (objet 3D)
+    if obj.type == 'MESH':
+        # Vide la liste des matériaux
+        obj.data.materials.clear()
+
+-------
+
+SUPPRESSION DE MODELS TROP LOURD (Pour push dans le depot):
+
+Si tu n'as pas encore installé git-filter-repo, 
+fais-le avec la commande suivante :
+
+bash:
+
+pip install git-filter-repo
+
+Une fois installé, exécute la commande suivante pour 
+supprimer le fichier du cache et de l’historique de Git 
+(dans ce cas, le fichier gentle.glb) :
+
+bash:
+
+git filter-repo --path public/models/gentle.glb --invert-paths
+
+Cela va supprimer tous les commits ayant ce fichier, 
+nettoyant l’historique Git.
+-------
+Pour vérifier que le fichier est bien supprimé de 
+l’historique, tu peux exécuter :
+
+bash:
+
+git log --oneline
