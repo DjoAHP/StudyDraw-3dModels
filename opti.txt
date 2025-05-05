@@ -1,0 +1,11 @@
+
+- glTF-Transform:
+
+gltf-transform simplify input.glb output.glb --ratio 0.5
+
+(Cela va compresser le modèle à 50% de sa taille initiale. 
+Tu peux ajuster le ratio pour plus ou moins de compression (entre 0.1 et 1).)
+
+- Draco:
+
+gltf-transform draco input.glb output_draco.glb
