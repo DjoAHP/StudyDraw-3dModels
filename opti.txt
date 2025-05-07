@@ -7,8 +7,15 @@ gltf-transform simplify input.glb output.glb --ratio 0.5
 Tu peux ajuster le ratio pour plus ou moins de compression (entre 0.1 et 1).)
 
 - Draco:
+Installation:
 
-gltf-transform draco input.glb output_draco.glb
+1. npm install -g @gltf-transform/cli
+
+2. cd C:\devapp\3d-StudyDraw-3dModels-V1\public\models
+
+3. gltf-transform draco input.glb output_draco.glb
+
+4. cd C:\devapp\3d-StudyDraw-3dModels-V1
 
 -----------
 
