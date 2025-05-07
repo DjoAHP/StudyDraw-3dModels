@@ -51,4 +51,4 @@ l’historique, tu peux exécuter :
 
 bash:
 
-git log --oneline
+git log --oneline 
