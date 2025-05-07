@@ -17,7 +17,7 @@ Installation:
 
 4. cd C:\devapp\3d-StudyDraw-3dModels-V1
 
----------------
+----------------
 
 BLENDER script "Supression de materiel":
 --------
