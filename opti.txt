@@ -13,11 +13,11 @@ Installation:
 
 2. cd C:\devapp\3d-StudyDraw-3dModels-V1\public\models
 
-3. gltf-transform draco input.glb output_draco.glb
+3. gltf-transform draco input.glb output_draco.glb  
 
 4. cd C:\devapp\3d-StudyDraw-3dModels-V1
 
------------
+---------------
 
 BLENDER script "Supression de materiel":
 --------
