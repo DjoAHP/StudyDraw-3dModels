@@ -29,7 +29,7 @@ for obj in bpy.data.objects:
 SUPPRESSION DE MODELS TROP LOURD (Pour push dans le depot)  :
 
 Si tu n'as pas encore installé git-filter-repo, 
-fais-le avec la commande suivante :
+fais-le avec la commande suivante:
 
 bash:
 
